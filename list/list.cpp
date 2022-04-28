@@ -44,3 +44,15 @@ void list::print() {
     }
 }
 
+bool list::check(const int &item) {
+    node* current = this->head;
+
+    while (current != nullptr) {
+        if (current->index == item)
+            return true;
+        current = current->next;
+    }
+
+    return false;
+}
+

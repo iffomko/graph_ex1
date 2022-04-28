@@ -27,6 +27,21 @@ int main() {
     }
 
     if (graph != nullptr) {
+        bool isCheck = true;
+
+        for (int i = 0; i < n; i++)
+            for (int j = 1; j <= n; j++)
+                if (i + 1 != j && !graph[i].check(j)) {
+                    isCheck = false;
+                    break;
+                }
+        
+
+        if (isCheck)
+            std::cout << "Graph is full..." << std::endl;
+        else
+            std::cout << "Graph isn't full..." << std::endl;
+
         for (int i = 0; i < n; i++) {
             std::cout << i + 1 << ": ";
             graph[i].print();

@@ -19,6 +19,8 @@ public:
     ~list();
     void push(int value);
     void print();
+
+    bool check(const int &item);
 };
 
 
