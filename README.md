@@ -1,3 +1,3 @@
-# 28.04.2022-ex1--classwork-
+# graph_ex1
 
 What I did: checking for is full graph, creating supplemented graph
